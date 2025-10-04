@@ -1,110 +1,81 @@
-/* Reset básico */
-* {
+/* Plano de fundo elegante */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
+  background: linear-gradient(to bottom, #e6e0f8, #f5f0e6);
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fdf6f0; /* tom suave de fundo */
-  color: #3b3b3b;
+  color: #2c2c2c;
   text-align: center;
-}
-
-/* Centralização total */
-.site {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-  padding: 20px;
-}
-
-/* Container principal */
-.container {
-  max-width: 800px;
-  width: 100%;
 }
 
 /* Cabeçalho */
 .site__header {
-  margin-bottom: 40px;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 .site__title {
-  font-size: 2.5rem;
-  color: #b8860b; /* dourado elegante */
+  font-family: 'Georgia', serif;
+  font-size: 3em;
+  color: #c6a664;
   margin-bottom: 10px;
 }
 
-.site__nav {
-  margin-top: 10px;
-}
-
-.site__nav a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: #8b4513;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.site__nav a:hover {
-  color: #d2691e;
-}
-
-/* Seções */
-.site__main section {
-  margin-bottom: 30px;
-}
-
-.section__title {
-  font-size: 1.8rem;
-  color: #a0522d;
-  margin-bottom: 10px;
-}
-
-.produto__nome {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #8b0000;
-}
-
-.produto__descricao {
-  font-size: 1rem;
-  color: #444;
-}
-
-/* Lista da coleção */
-.colecao__lista {
+.site__nav .nav__list {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 }
 
-.colecao__item {
-  background-color: #fff8dc;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: 500;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.site__nav a {
+  text-decoration: none;
+  color: #c6a664;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-/* Sobre */
-.sobre__texto {
-  font-size: 1rem;
-  color: #555;
+/* Seções principais */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-family: 'Georgia', serif;
+  font-size: 2em;
+  color: #c6a664;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Georgia', serif;
+  font-size: 1.5em;
+  color: #c6a664;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 /* Rodapé */
-.site__footer {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 20px;
+footer {
+  background-color: #f5f0e6;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+address p {
+  margin: 5px 0;
 }
