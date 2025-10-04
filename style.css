@@ -1,0 +1,110 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6f0; /* tom suave de fundo */
+  color: #3b3b3b;
+  text-align: center;
+}
+
+/* Centralização total */
+.site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Container principal */
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Cabeçalho */
+.site__header {
+  margin-bottom: 40px;
+}
+
+.site__title {
+  font-size: 2.5rem;
+  color: #b8860b; /* dourado elegante */
+  margin-bottom: 10px;
+}
+
+.site__nav {
+  margin-top: 10px;
+}
+
+.site__nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #8b4513;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.site__nav a:hover {
+  color: #d2691e;
+}
+
+/* Seções */
+.site__main section {
+  margin-bottom: 30px;
+}
+
+.section__title {
+  font-size: 1.8rem;
+  color: #a0522d;
+  margin-bottom: 10px;
+}
+
+.produto__nome {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #8b0000;
+}
+
+.produto__descricao {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Lista da coleção */
+.colecao__lista {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.colecao__item {
+  background-color: #fff8dc;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Sobre */
+.sobre__texto {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Rodapé */
+.site__footer {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 20px;
+}
